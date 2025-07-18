@@ -1,0 +1,21 @@
+{
+  "workflow_str_id": "wf001",
+  "name": "Data Pipeline",
+  "steps": [
+    {
+      "step_str_id": "stepA",
+      "description": "Download Data",
+      "prerequisites": []
+    },
+    {
+      "step_str_id": "stepB",
+      "description": "Clean Data",
+      "prerequisites": ["stepA"]
+    },
+    {
+      "step_str_id": "stepC",
+      "description": "Analyze Data",
+      "prerequisites": ["stepB"]
+    }
+  ]
+}
